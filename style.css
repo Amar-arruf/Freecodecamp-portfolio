@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: red;
+  z-index: 9;
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#navbar ul li {
+  list-style-type: none;
+}
+
+#navbar ul li a {
+  margin: 0 40px;
+  text-decoration: none;
+  font-size: 1.3em;
+  color: black;
+}
+
+#welcome-section {
+  display: flex;
+  text-align: center;
+  height: 100vh;
+  width: auto;
+  background-color: #323ca8;
+}
+
+#welcome-section .container h1 {
+  padding:20px;
+  font-size: 3em;
+  color: white;
+}
+
+#welcome-section .container h3 {
+  padding: auto;
+  font-size: 1.5em;
+  color: red;
+}
+
+#projects {
+  background-color: #064e3f91;
+}
+
+section {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+#projects .container .container-title {
+  display: flex;
+  justify-content: center;
+}
+
+.container .container-title h2 {
+  position: relative;
+  font-size: 1.9em;
+  width: fit-content;
+  padding: 1.7rem;
+  color: white;
+}
+
+.container .container-title h2::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+}
+
+.project-grid {
+  margin: 4rem 0;
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(430px, 1fr));
+  gap: 20px;
+  align-items: center;
+}
+
+.project-tile {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+}
+
+.project-tile img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-tile p {
+  font-size: 1.2em;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  background-color: #060d5a;
+  padding: 8px;
+}
+
+.cont-button {
+  display:flex;
+  justify-content: center;
+}
+
+.cont-button a {
+  text-decoration: none;
+  background-color: #060d5a;
+  font-size: 1.2em;
+  color: white;
+  padding: 10px;
+}
+
+@media screen and (max-width:450px) {
+
+  #welcome-section .container h1 {
+    padding: 11px;
+    font-size: 2em;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .container .container-title h2 {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  #navbar ul {
+    justify-content: center;
+  }
+
+}
+
+
+
